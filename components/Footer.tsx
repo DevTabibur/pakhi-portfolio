@@ -1,7 +1,7 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { GraduationCap, ArrowUp, Heart, ExternalLink } from "lucide-react";
+import { GraduationCap, ArrowUp, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   const { personal, socialLinks, navigation } = portfolioData;
@@ -163,9 +163,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            © {new Date().getFullYear()} Kabibur Rahman. All rights reserved.
-          </p>
+          <p>© 2026 Kabibur Rahman. All rights reserved.</p>
 
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">

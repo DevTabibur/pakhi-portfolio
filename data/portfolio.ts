@@ -90,7 +90,7 @@ export interface Milestone {
 export const portfolioData = {
   personal: {
     name: "Kabibur Rahman",
-    shortName: "Pakhi",
+    shortName: "",
     eyebrow: "Educator • EdTech Co-Founder • CSE Undergraduate",
     headline:
       "Transforming Complex Computer Science Concepts Into Intuitive Learning Experiences",
@@ -99,10 +99,10 @@ export const portfolioData = {
     availability:
       "Available for Mentoring, Guest Workshops & EdTech Collaborations",
     location: "Dhaka, Bangladesh",
-    email: "shafiur.pakhi.cse@gmail.com",
+    email: "Kabibur..cse@gmail.com",
     phone: "+880 1712-345678",
     avatar: "/images/profile.jpg",
-    avatarPlaceholderInitials: "SP",
+    avatarPlaceholderInitials: "KB",
     experienceYears: "5+",
     studentsMentored: "12,000+",
     institutionsRepresented: "University of Dhaka | Studins School",
@@ -110,12 +110,12 @@ export const portfolioData = {
   },
 
   socialLinks: {
-    linkedin: "https://linkedin.com/in/shafiur-pakhi",
-    github: "https://github.com/shafiur-pakhi",
-    facebook: "https://facebook.com/shafiur.pakhi",
+    linkedin: "https://linkedin.com/in/Kabibur-",
+    github: "https://github.com/Kabibur-",
+    facebook: "https://facebook.com/Kabibur.",
     youtube: "https://youtube.com/@studinsschool",
     studinsSchool: "https://studinsschool.com",
-    telegram: "https://t.me/pakhi_cse",
+    telegram: "https://t.me/_cse",
   },
 
   navigation: [
@@ -421,8 +421,8 @@ export const portfolioData = {
       tags: ["React", "WebAssembly", "Data Structures", "Visualization"],
       featured: true,
       linkText: "Live Demo",
-      linkUrl: "https://github.com/shafiur-pakhi",
-      githubUrl: "https://github.com/shafiur-pakhi",
+      linkUrl: "https://github.com/Kabibur-",
+      githubUrl: "https://github.com/Kabibur-",
       previewImage: "/images/project-c-visualizer.jpg",
       metrics: "Used in live classroom demonstrations",
     },
@@ -435,8 +435,8 @@ export const portfolioData = {
       tags: ["Cisco Packet Tracer", "CCNA", "Network Architecture", "Routing"],
       featured: false,
       linkText: "Explore Labs",
-      linkUrl: "https://github.com/shafiur-pakhi",
-      githubUrl: "https://github.com/shafiur-pakhi",
+      linkUrl: "https://github.com/Kabibur-",
+      githubUrl: "https://github.com/Kabibur-",
       previewImage: "/images/project-network-lab.jpg",
       metrics: "15+ Production-grade simulation scenarios",
     },
@@ -616,7 +616,7 @@ export const portfolioData = {
     {
       id: "t1",
       quote:
-        "Pakhi Bhai's C programming lectures completely transformed my fear of coding into a genuine passion. Before his classes, memory allocation and pointers felt impossible. He explains every bit and byte with crystal clarity!",
+        " Bhai's C programming lectures completely transformed my fear of coding into a genuine passion. Before his classes, memory allocation and pointers felt impossible. He explains every bit and byte with crystal clarity!",
       name: "Tanvir Ahmed",
       role: "HSC ICT Student (Now at BUET CSE)",
       institution: "Notre Dame College",
@@ -627,7 +627,7 @@ export const portfolioData = {
     {
       id: "t2",
       quote:
-        "The question bank and lecture notes provided at Studins School under Pakhi Bhai's leadership are unparalleled. You don't just memorize answers; you understand the underlying concepts so well that no question in the exam hall can surprise you.",
+        "The question bank and lecture notes provided at Studins School under  Bhai's leadership are unparalleled. You don't just memorize answers; you understand the underlying concepts so well that no question in the exam hall can surprise you.",
       name: "Sumaiya Jahan",
       role: "HSC Science Candidate",
       institution: "Viqarunnisa Noon College",
@@ -638,7 +638,7 @@ export const portfolioData = {
     {
       id: "t3",
       quote:
-        "Shafiur has that rare gift of being both a rigorous computer scientist and an extraordinarily patient educator. His Cisco networking workshop for our junior batch simplified complex routing protocols that standard textbooks make daunting.",
+        "Kabibur has that rare gift of being both a rigorous computer scientist and an extraordinarily patient educator. His Cisco networking workshop for our junior batch simplified complex routing protocols that standard textbooks make daunting.",
       name: "Mahir Faysal",
       role: "CSE Undergraduate Colleague",
       institution: "University of Dhaka",
@@ -649,7 +649,7 @@ export const portfolioData = {
     {
       id: "t4",
       quote:
-        "As a parent, I was amazed at how motivated my son became after joining Pakhi's classes. He stopped cramming and began building actual mini-projects. Pakhi Sir is not just a teacher, but a mentor who guides students towards real careers in tech.",
+        "As a parent, I was amazed at how motivated my son became after joining 's classes. He stopped cramming and began building actual mini-projects.  Sir is not just a teacher, but a mentor who guides students towards real careers in tech.",
       name: "Dr. Rafiqul Islam",
       role: "Guardian & University Professor",
       institution: "Dhaka",
@@ -696,7 +696,7 @@ export const portfolioData = {
 
   faqs: [
     {
-      question: "What courses and batches does Pakhi Bhai currently teach?",
+      question: "What courses and batches does  Bhai currently teach?",
       answer:
         "I primarily teach HSC ICT (covering C Programming, Number Systems, Web Design, and Database), Foundational C/C++ Programming for university beginners, and Computer Networking & CCNA fundamentals through Studins School and private mentorship cohorts.",
     },

@@ -4,10 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Kabibur Rahman | Educator • EdTech Co-Founder • CSE Undergraduate",
   description:
-    "Official portfolio of Shafiur Rahman (Pakhi) — Educator, Co-Founder of Studins School, and Computer Science & Engineering undergraduate at the University of Dhaka. Transforming complex computing into intuitive learning.",
+    "Official portfolio of Kabibur Rahman () — Educator, Co-Founder of Studins School, and Computer Science & Engineering undergraduate at the University of Dhaka. Transforming complex computing into intuitive learning.",
   keywords: [
     "Kabibur Rahman",
-    "Pakhi CSE",
+    " CSE",
     "Studins School",
     "HSC ICT Educator",
     "University of Dhaka CSE",
