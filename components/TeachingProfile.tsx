@@ -3,19 +3,19 @@
 import { useState } from "react";
 import { portfolioData, DemoLecture } from "@/data/portfolio";
 import LectureModal from "./LectureModal";
-import { 
-  BookOpen, 
-  Code2, 
-  Network, 
-  Cpu, 
-  Play, 
-  Clock, 
-  Star, 
-  CheckCircle, 
+import {
+  BookOpen,
+  Code2,
+  Network,
+  Cpu,
+  Play,
+  Clock,
+  Star,
+  CheckCircle,
   ArrowRight,
   Sparkles,
   Layers,
-  GraduationCap
+  GraduationCap,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -27,12 +27,16 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function TeachingProfile() {
   const { teaching } = portfolioData;
-  const [selectedLecture, setSelectedLecture] = useState<DemoLecture | null>(null);
+  const [selectedLecture, setSelectedLecture] = useState<DemoLecture | null>(
+    null,
+  );
 
   return (
-    <section id="teaching" className="py-20 sm:py-28 bg-slate-50/60 dark:bg-slate-900/40 relative">
+    <section
+      id="teaching"
+      className="py-20 sm:py-28 bg-slate-50/60 dark:bg-slate-900/40 relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header: Doctor / Specialist Style Presentation */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-teal-700 dark:text-teal-300 text-xs font-semibold">
@@ -43,7 +47,9 @@ export default function TeachingProfile() {
             Teaching Profile & Curriculum Specializations
           </h2>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-            Meticulously architected courses that bridge foundational computer science, board exam mastery, and university transition for ambitious learners.
+            Meticulously architected courses that bridge foundational computer
+            science, board exam mastery, and university transition for ambitious
+            learners.
           </p>
         </div>
 
@@ -82,7 +88,10 @@ export default function TeachingProfile() {
                     </p>
                     <ul className="space-y-1.5">
                       {subject.topics.map((topic, i) => (
-                        <li key={i} className="flex items-center gap-2 text-xs text-slate-700 dark:text-slate-300">
+                        <li
+                          key={i}
+                          className="flex items-center gap-2 text-xs text-slate-700 dark:text-slate-300"
+                        >
                           <CheckCircle className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400 flex-shrink-0" />
                           <span>{topic}</span>
                         </li>
@@ -112,7 +121,6 @@ export default function TeachingProfile() {
         {/* Teaching Methodology / Pedagogical Philosophy Section */}
         <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/90 dark:border-slate-800 p-8 sm:p-12 mb-20 shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
             <div className="lg:col-span-5 space-y-4">
               <span className="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">
                 {teaching.philosophy.tag}
@@ -152,7 +160,6 @@ export default function TeachingProfile() {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
 
@@ -167,7 +174,8 @@ export default function TeachingProfile() {
                 Demo Lectures & Masterclasses
               </h3>
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
-                Experience the teaching style firsthand. Visual, engaging, and zero-memorization lectures.
+                Experience the teaching style firsthand. Visual, engaging, and
+                zero-memorization lectures.
               </p>
             </div>
             <a
@@ -238,7 +246,6 @@ export default function TeachingProfile() {
             ))}
           </div>
         </div>
-
       </div>
 
       {/* Interactive Lecture Modal */}

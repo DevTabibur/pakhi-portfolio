@@ -1,25 +1,27 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { 
-  Building2, 
-  Users, 
-  BookOpenCheck, 
-  ShieldCheck, 
-  ExternalLink, 
+import {
+  Building2,
+  Users,
+  BookOpenCheck,
+  ShieldCheck,
+  ExternalLink,
   Sparkles,
   ArrowRight,
   TrendingUp,
-  Award
+  Award,
 } from "lucide-react";
 
 export default function Leadership() {
   const { leadership } = portfolioData;
 
   return (
-    <section id="leadership" className="py-20 sm:py-28 relative overflow-hidden bg-white dark:bg-slate-950">
+    <section
+      id="leadership"
+      className="py-20 sm:py-28 relative overflow-hidden bg-white dark:bg-slate-950"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Founder Badge & Headline */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
@@ -40,7 +42,6 @@ export default function Leadership() {
           <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
             <div className="lg:col-span-7 space-y-5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-teal-500/20 text-teal-300 text-xs font-semibold border border-teal-500/30">
                 <ShieldCheck className="w-3.5 h-3.5 text-teal-400" />
@@ -90,7 +91,6 @@ export default function Leadership() {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
 
@@ -167,7 +167,6 @@ export default function Leadership() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

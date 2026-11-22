@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shafiur Rahman Pakhi | Educator • EdTech Co-Founder • CSE Undergraduate",
+  title: "Kabibur Rahman | Educator • EdTech Co-Founder • CSE Undergraduate",
   description:
     "Official portfolio of Shafiur Rahman (Pakhi) — Educator, Co-Founder of Studins School, and Computer Science & Engineering undergraduate at the University of Dhaka. Transforming complex computing into intuitive learning.",
   keywords: [
-    "Shafiur Rahman Pakhi",
+    "Kabibur Rahman",
     "Pakhi CSE",
     "Studins School",
     "HSC ICT Educator",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Computer Networks",
     "EdTech Bangladesh",
   ],
-  authors: [{ name: "Shafiur Rahman Pakhi" }],
+  authors: [{ name: "Kabibur Rahman" }],
   viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/favicon.ico",

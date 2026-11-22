@@ -1,16 +1,16 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { 
-  GraduationCap, 
-  Award, 
-  Terminal, 
-  Server, 
-  Laptop, 
+import {
+  GraduationCap,
+  Award,
+  Terminal,
+  Server,
+  Laptop,
   BookOpenCheck,
   CheckCircle2,
   Calendar,
-  Sparkles
+  Sparkles,
 } from "lucide-react";
 
 const categoryIconMap: Record<string, React.ElementType> = {
@@ -24,9 +24,11 @@ export default function EducationSkills() {
   const { education } = portfolioData;
 
   return (
-    <section id="skills" className="py-20 sm:py-28 bg-white dark:bg-slate-950 relative">
+    <section
+      id="skills"
+      className="py-20 sm:py-28 bg-white dark:bg-slate-950 relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-teal-700 dark:text-teal-300 text-xs font-semibold">
@@ -37,13 +39,14 @@ export default function EducationSkills() {
             Education, Certifications & Skills Matrix
           </h2>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-            Grounded in university-level theoretical computer science with practical hands-on proficiency in systems, networking, and instructional design.
+            Grounded in university-level theoretical computer science with
+            practical hands-on proficiency in systems, networking, and
+            instructional design.
           </p>
         </div>
 
         {/* Academic Degrees & Certifications Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
-          
           {/* Left Column: Academic Credentials */}
           <div className="lg:col-span-7 space-y-6">
             <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
@@ -136,17 +139,22 @@ export default function EducationSkills() {
                     <CheckCircle2 className="w-5 h-5" />
                   </div>
                   <div>
-                    <h5 className="text-sm font-bold">Verified Academic Credential</h5>
-                    <p className="text-xs text-teal-300">Department of CSE, DU</p>
+                    <h5 className="text-sm font-bold">
+                      Verified Academic Credential
+                    </h5>
+                    <p className="text-xs text-teal-300">
+                      Department of CSE, DU
+                    </p>
                   </div>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed mt-2">
-                  Academic transcripts, admission ranking records, and certification verifications available upon institutional request.
+                  Academic transcripts, admission ranking records, and
+                  certification verifications available upon institutional
+                  request.
                 </p>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Detailed 4-Category Technical & Domain Skills Matrix */}
@@ -187,7 +195,7 @@ export default function EducationSkills() {
                               {skill.note || `${skill.level}%`}
                             </span>
                           </div>
-                          
+
                           {/* Progress track */}
                           <div className="w-full h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
                             <div
@@ -204,7 +212,6 @@ export default function EducationSkills() {
             })}
           </div>
         </div>
-
       </div>
     </section>
   );

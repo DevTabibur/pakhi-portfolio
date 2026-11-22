@@ -45,7 +45,11 @@ export interface LeadershipInitiative {
 export interface ProjectResource {
   id: string;
   title: string;
-  category: "EdTech & LMS" | "Lecture Series" | "Code & Dev" | "Study Materials";
+  category:
+    | "EdTech & LMS"
+    | "Lecture Series"
+    | "Code & Dev"
+    | "Study Materials";
   description: string;
   tags: string[];
   featured: boolean;
@@ -85,13 +89,15 @@ export interface Milestone {
 
 export const portfolioData = {
   personal: {
-    name: "Shafiur Rahman Pakhi",
+    name: "Kabibur Rahman",
     shortName: "Pakhi",
     eyebrow: "Educator • EdTech Co-Founder • CSE Undergraduate",
-    headline: "Transforming Complex Computer Science Concepts Into Intuitive Learning Experiences",
+    headline:
+      "Transforming Complex Computer Science Concepts Into Intuitive Learning Experiences",
     subheadline:
       "Undergraduate researcher in Computer Science & Engineering at the University of Dhaka and Co-Founder at Studins School. Dedicated to bridging theoretical computing, real-world engineering, and high-impact digital education for thousands of aspiring technologists across Bangladesh.",
-    availability: "Available for Mentoring, Guest Workshops & EdTech Collaborations",
+    availability:
+      "Available for Mentoring, Guest Workshops & EdTech Collaborations",
     location: "Dhaka, Bangladesh",
     email: "shafiur.pakhi.cse@gmail.com",
     phone: "+880 1712-345678",
@@ -249,7 +255,8 @@ export const portfolioData = {
     demoLectures: [
       {
         id: "lec-c-pointers",
-        title: "Mastering Pointers & Dynamic Memory in C: Visualized from Hardware Up",
+        title:
+          "Mastering Pointers & Dynamic Memory in C: Visualized from Hardware Up",
         subject: "C Programming",
         duration: "42 mins",
         level: "Foundational",
@@ -285,7 +292,12 @@ export const portfolioData = {
         videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         views: "26.8K views",
         rating: 4.9,
-        tags: ["De Morgan's Laws", "K-Maps", "NAND Universal Gate", "CQ Solved"],
+        tags: [
+          "De Morgan's Laws",
+          "K-Maps",
+          "NAND Universal Gate",
+          "CQ Solved",
+        ],
         summary:
           "High-yield walkthrough of recurring creative question patterns with foolproof truth table and circuit verification strategies.",
       },
@@ -299,7 +311,12 @@ export const portfolioData = {
         videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         views: "11.7K views",
         rating: 4.8,
-        tags: ["Inner Join", "Left Join", "ER Diagrams", "Live Query Execution"],
+        tags: [
+          "Inner Join",
+          "Left Join",
+          "ER Diagrams",
+          "Live Query Execution",
+        ],
         summary:
           "Visual Venn diagram analogies matched with real SQL queries on relational schemas, explaining normalization and foreign key constraints.",
       },
@@ -309,7 +326,8 @@ export const portfolioData = {
   leadership: {
     role: "Co-Founder & Chief Academic Officer",
     organization: "Studins School",
-    tagline: "Building the next generation of accessible, high-standard digital education in Bangladesh",
+    tagline:
+      "Building the next generation of accessible, high-standard digital education in Bangladesh",
     overview:
       "As a Co-Founder of Studins School, I lead academic curriculum engineering, faculty mentorship, and digital pedagogy design. Studins School was established to eliminate the barrier of expensive private tutoring by providing high-fidelity digital courses, interactive problem banks, and mentorship cohorts to students nationwide.",
     stats: [
@@ -339,19 +357,22 @@ export const portfolioData = {
     initiatives: [
       {
         title: "Free HSC ICT Open Access Initiative",
-        description: "Released 80+ high-definition lecture notes and solution guides completely free, supporting under-resourced students in rural districts.",
+        description:
+          "Released 80+ high-definition lecture notes and solution guides completely free, supporting under-resourced students in rural districts.",
         metric: "50,000+ Downloads",
         badge: "Social Impact",
       },
       {
         title: "CodeStart: First Steps into Software Engineering",
-        description: "A 4-week weekend bootcamp introducing secondary school students to computational thinking, algorithms, and practical web coding.",
+        description:
+          "A 4-week weekend bootcamp introducing secondary school students to computational thinking, algorithms, and practical web coding.",
         metric: "800+ Graduates",
         badge: "Bootcamp",
       },
       {
         title: "Model Test & Real-Time Exam Simulator",
-        description: "A timed exam platform simulating national board and DU admission constraints with instant automated feedback and percentile ranks.",
+        description:
+          "A timed exam platform simulating national board and DU admission constraints with instant automated feedback and percentile ranks.",
         metric: "15,000+ Tests Taken",
         badge: "Technology",
       },
@@ -378,7 +399,12 @@ export const portfolioData = {
       category: "Study Materials",
       description:
         "Digital interactive repository of 500+ board exam questions, categorized by chapter with color-annotated step-by-step solutions and common error alerts.",
-      tags: ["Interactive PDF", "Curriculum Guide", "Board Exam", "Open Access"],
+      tags: [
+        "Interactive PDF",
+        "Curriculum Guide",
+        "Board Exam",
+        "Open Access",
+      ],
       featured: true,
       linkText: "View Resource",
       linkUrl: "#contact",
@@ -478,7 +504,8 @@ export const portfolioData = {
         title: "Cisco Certified Network Associate (CCNA) Curriculum",
         issuer: "Cisco Networking Academy",
         date: "2024",
-        topics: "Enterprise Networking, Security, IP Services, Routing & Switching",
+        topics:
+          "Enterprise Networking, Security, IP Services, Routing & Switching",
       },
       {
         title: "Modern Full-Stack Web Architecture & TypeScript",
@@ -490,20 +517,38 @@ export const portfolioData = {
         title: "Pedagogy & Digital Teaching Excellence",
         issuer: "EdTech Leadership Forum",
         date: "2023",
-        topics: "Instructional Design, Formative Assessment, Student Engagement",
+        topics:
+          "Instructional Design, Formative Assessment, Student Engagement",
       },
     ],
     skillCategories: [
       {
         title: "Teaching & Academic Pedagogy",
         icon: "BookOpenCheck",
-        description: "Methods honed over 5+ years instructing high school and undergraduate students.",
+        description:
+          "Methods honed over 5+ years instructing high school and undergraduate students.",
         skills: [
           { name: "HSC ICT Curriculum (NCTB)", level: 98, note: "Mastery" },
-          { name: "Concept Simplification & Analogies", level: 96, note: "Expert" },
-          { name: "Creative Question (CQ) Structuring", level: 95, note: "Expert" },
-          { name: "Live Coding & Interactive Instruction", level: 92, note: "Advanced" },
-          { name: "Curriculum Architecture & Syllabus", level: 90, note: "Advanced" },
+          {
+            name: "Concept Simplification & Analogies",
+            level: 96,
+            note: "Expert",
+          },
+          {
+            name: "Creative Question (CQ) Structuring",
+            level: 95,
+            note: "Expert",
+          },
+          {
+            name: "Live Coding & Interactive Instruction",
+            level: 92,
+            note: "Advanced",
+          },
+          {
+            name: "Curriculum Architecture & Syllabus",
+            level: 90,
+            note: "Advanced",
+          },
         ],
       },
       {
@@ -515,17 +560,26 @@ export const portfolioData = {
           { name: "Data Structures & Algorithms", level: 88, note: "Advanced" },
           { name: "Python", level: 85, note: "Proficient" },
           { name: "JavaScript & TypeScript", level: 86, note: "Proficient" },
-          { name: "SQL & Relational Schema Design", level: 84, note: "Proficient" },
+          {
+            name: "SQL & Relational Schema Design",
+            level: 84,
+            note: "Proficient",
+          },
         ],
       },
       {
         title: "Networking & Infrastructure",
         icon: "Server",
-        description: "Network simulation, protocols, and systems administration.",
+        description:
+          "Network simulation, protocols, and systems administration.",
         skills: [
           { name: "TCP/IP & OSI Architecture", level: 90, note: "Advanced" },
           { name: "IPv4/IPv6 Subnetting & VLSM", level: 94, note: "Expert" },
-          { name: "Cisco Packet Tracer Simulations", level: 90, note: "Advanced" },
+          {
+            name: "Cisco Packet Tracer Simulations",
+            level: 90,
+            note: "Advanced",
+          },
           { name: "Linux OS & Bash Scripting", level: 82, note: "Proficient" },
           { name: "Wireshark Packet Analysis", level: 80, note: "Competent" },
         ],
@@ -533,13 +587,26 @@ export const portfolioData = {
       {
         title: "Modern Web & Digital Tools",
         icon: "Laptop",
-        description: "Modern web tools, content creation, and collaborative software.",
+        description:
+          "Modern web tools, content creation, and collaborative software.",
         skills: [
           { name: "Next.js & React", level: 85, note: "Proficient" },
           { name: "Tailwind CSS & Responsive UI", level: 92, note: "Expert" },
-          { name: "Git, GitHub & Version Control", level: 88, note: "Advanced" },
-          { name: "OBS Studio & Video Production", level: 90, note: "Advanced" },
-          { name: "Figma & Visual Presentation", level: 82, note: "Proficient" },
+          {
+            name: "Git, GitHub & Version Control",
+            level: 88,
+            note: "Advanced",
+          },
+          {
+            name: "OBS Studio & Video Production",
+            level: 90,
+            note: "Advanced",
+          },
+          {
+            name: "Figma & Visual Presentation",
+            level: 82,
+            note: "Proficient",
+          },
         ],
       },
     ] as SkillCategory[],
@@ -597,28 +664,32 @@ export const portfolioData = {
       year: "2024",
       title: "Co-Founded Studins School EdTech Platform",
       organization: "Studins School",
-      description: "Launched nationwide platform serving over 25,000 registered community learners with 15+ comprehensive courses.",
+      description:
+        "Launched nationwide platform serving over 25,000 registered community learners with 15+ comprehensive courses.",
       badge: "EdTech Milestone",
     },
     {
       year: "2023",
       title: "10,000+ Students Mentored Milestone",
       organization: "Academic Outreach",
-      description: "Crossed 10,000 active students mentored through offline coaching, college guest workshops, and live online masterclasses.",
+      description:
+        "Crossed 10,000 active students mentored through offline coaching, college guest workshops, and live online masterclasses.",
       badge: "Community Impact",
     },
     {
       year: "2022",
       title: "Enrolled in B.Sc. in CSE at University of Dhaka",
       organization: "University of Dhaka",
-      description: "Secured competitive merit placement at Bangladesh's premier institution for Computer Science and Engineering.",
+      description:
+        "Secured competitive merit placement at Bangladesh's premier institution for Computer Science and Engineering.",
       badge: "Academic Excellence",
     },
     {
       year: "2021",
       title: "Golden GPA 5.00 in HSC Examination",
       organization: "Board of Intermediate & Secondary Education",
-      description: "Awarded national academic distinction with perfect marks across Science and Information Technology disciplines.",
+      description:
+        "Awarded national academic distinction with perfect marks across Science and Information Technology disciplines.",
       badge: "National Merit",
     },
   ] as Milestone[],
@@ -630,7 +701,8 @@ export const portfolioData = {
         "I primarily teach HSC ICT (covering C Programming, Number Systems, Web Design, and Database), Foundational C/C++ Programming for university beginners, and Computer Networking & CCNA fundamentals through Studins School and private mentorship cohorts.",
     },
     {
-      question: "How can I enroll in Studins School classes or access study materials?",
+      question:
+        "How can I enroll in Studins School classes or access study materials?",
       answer:
         "You can visit studinsschool.com to view active batches, download free open-access lecture notes and question banks, or submit an inquiry using the contact form below for upcoming cohort schedules.",
     },
@@ -640,7 +712,8 @@ export const portfolioData = {
         "Yes! I offer dedicated 1-on-1 sessions for students needing personalized academic roadmaps, university CSE transition guidance, or debugging help. You can schedule a session via the contact section below.",
     },
     {
-      question: "Can colleges or tech clubs invite you for workshops and guest lectures?",
+      question:
+        "Can colleges or tech clubs invite you for workshops and guest lectures?",
       answer:
         "Absolutely. I regularly conduct hands-on interactive workshops on 'First Steps into C Programming', 'Demystifying Computer Networks with Cisco Packet Tracer', and 'Ace HSC ICT with Logic'. Please reach out with the event details.",
     },

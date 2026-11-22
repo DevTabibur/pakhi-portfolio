@@ -2,18 +2,23 @@
 
 import { useState } from "react";
 import { portfolioData, ProjectResource } from "@/data/portfolio";
-import { 
-  FolderGit2, 
-  ExternalLink, 
-  Download, 
-  FileText, 
+import {
+  FolderGit2,
+  ExternalLink,
+  Download,
+  FileText,
   CheckCircle,
   Sparkles,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import { GithubIcon } from "@/components/Icons";
 
-type CategoryFilter = "All" | "EdTech & LMS" | "Lecture Series" | "Code & Dev" | "Study Materials";
+type CategoryFilter =
+  | "All"
+  | "EdTech & LMS"
+  | "Lecture Series"
+  | "Code & Dev"
+  | "Study Materials";
 
 export default function ProjectsGrid() {
   const { projects } = portfolioData;
@@ -27,14 +32,17 @@ export default function ProjectsGrid() {
     "Study Materials",
   ];
 
-  const filteredProjects = activeCategory === "All"
-    ? projects
-    : projects.filter((p) => p.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "All"
+      ? projects
+      : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-slate-50/70 dark:bg-slate-900/40 relative">
+    <section
+      id="projects"
+      className="py-20 sm:py-28 bg-slate-50/70 dark:bg-slate-900/40 relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-teal-700 dark:text-teal-300 text-xs font-semibold">
@@ -45,7 +53,9 @@ export default function ProjectsGrid() {
             Projects, Educational Portals & Study Resources
           </h2>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-            Curated software applications, open-access study materials, video masterclasses, and networking labs engineered to make learning efficient.
+            Curated software applications, open-access study materials, video
+            masterclasses, and networking labs engineered to make learning
+            efficient.
           </p>
         </div>
 
@@ -76,7 +86,7 @@ export default function ProjectsGrid() {
               {/* Card Banner / Abstract Visualization */}
               <div className="relative aspect-[16/9] bg-gradient-to-tr from-slate-900 via-teal-950 to-slate-900 p-5 flex flex-col justify-between text-white overflow-hidden">
                 <div className="absolute inset-0 bg-dot-pattern opacity-25" />
-                
+
                 <div className="relative z-10 flex items-center justify-between">
                   <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-teal-300 border border-teal-500/30">
                     {project.category}
@@ -124,7 +134,9 @@ export default function ProjectsGrid() {
                 <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
                   <a
                     href={project.linkUrl}
-                    target={project.linkUrl.startsWith("http") ? "_blank" : "_self"}
+                    target={
+                      project.linkUrl.startsWith("http") ? "_blank" : "_self"
+                    }
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300"
                   >
@@ -159,7 +171,6 @@ export default function ProjectsGrid() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

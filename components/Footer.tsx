@@ -13,9 +13,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800/80 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
-          
           {/* Brand Info (2 Columns) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
@@ -33,11 +31,14 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              Empowering learners through rigorous, intuitive computer science education and pioneering digital learning ecosystems with Studins School.
+              Empowering learners through rigorous, intuitive computer science
+              education and pioneering digital learning ecosystems with Studins
+              School.
             </p>
 
             <div className="pt-2 text-xs text-slate-500">
-              Department of Computer Science & Engineering<br />
+              Department of Computer Science & Engineering
+              <br />
               University of Dhaka, Dhaka, Bangladesh
             </div>
           </div>
@@ -68,27 +69,42 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="#teaching" className="hover:text-teal-400 transition-colors">
+                <a
+                  href="#teaching"
+                  className="hover:text-teal-400 transition-colors"
+                >
                   HSC ICT Complete Syllabus
                 </a>
               </li>
               <li>
-                <a href="#teaching" className="hover:text-teal-400 transition-colors">
+                <a
+                  href="#teaching"
+                  className="hover:text-teal-400 transition-colors"
+                >
                   C & C++ Programming Foundations
                 </a>
               </li>
               <li>
-                <a href="#teaching" className="hover:text-teal-400 transition-colors">
+                <a
+                  href="#teaching"
+                  className="hover:text-teal-400 transition-colors"
+                >
                   Computer Networks & CCNA
                 </a>
               </li>
               <li>
-                <a href="#leadership" className="hover:text-teal-400 transition-colors">
+                <a
+                  href="#leadership"
+                  className="hover:text-teal-400 transition-colors"
+                >
                   Studins School Programs
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-teal-400 transition-colors">
+                <a
+                  href="#projects"
+                  className="hover:text-teal-400 transition-colors"
+                >
                   Free Lecture Notes & Slides
                 </a>
               </li>
@@ -143,13 +159,14 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Shafiur Rahman Pakhi. All rights reserved.</p>
-          
+          <p>
+            © {new Date().getFullYear()} Kabibur Rahman. All rights reserved.
+          </p>
+
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
               Crafted with care for students & learners
@@ -163,7 +180,6 @@ export default function Footer() {
             </button>
           </div>
         </div>
-
       </div>
     </footer>
   );

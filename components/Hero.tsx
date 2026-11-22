@@ -1,33 +1,34 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { 
-  ArrowRight, 
-  Calendar, 
-  CheckCircle2, 
-  GraduationCap, 
-  Star, 
-  Building2, 
+import {
+  ArrowRight,
+  Calendar,
+  CheckCircle2,
+  GraduationCap,
+  Star,
+  Building2,
   Download,
   BookOpen,
-  Award
+  Award,
 } from "lucide-react";
 
 export default function Hero() {
   const { personal, socialLinks } = portfolioData;
 
   return (
-    <section id="home" className="relative pt-28 sm:pt-36 pb-16 lg:pb-24 overflow-hidden bg-grid-pattern">
+    <section
+      id="home"
+      className="relative pt-28 sm:pt-36 pb-16 lg:pb-24 overflow-hidden bg-grid-pattern"
+    >
       {/* Decorative background glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-teal-500/10 dark:bg-teal-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 right-10 w-72 h-72 bg-emerald-500/10 dark:bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
           {/* Left Column: Editorial Headline & Bio */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
-            
             {/* Status / Availability Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200/70 dark:border-teal-800/70 shadow-xs">
               <span className="relative flex h-2 w-2">
@@ -62,15 +63,30 @@ export default function Hero() {
             <div className="pt-1 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
               <div className="flex items-center gap-1.5 bg-white dark:bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700/80 shadow-xs">
                 <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-                <span><strong className="text-slate-900 dark:text-white">4.9/5</strong> Rating (1.2k+ Reviews)</span>
+                <span>
+                  <strong className="text-slate-900 dark:text-white">
+                    4.9/5
+                  </strong>{" "}
+                  Rating (1.2k+ Reviews)
+                </span>
               </div>
               <div className="flex items-center gap-1.5 bg-white dark:bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700/80 shadow-xs">
                 <GraduationCap className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-                <span><strong className="text-slate-900 dark:text-white">12k+</strong> Students Mentored</span>
+                <span>
+                  <strong className="text-slate-900 dark:text-white">
+                    12k+
+                  </strong>{" "}
+                  Students Mentored
+                </span>
               </div>
               <div className="flex items-center gap-1.5 bg-white dark:bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700/80 shadow-xs">
                 <Building2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                <span>Co-Founder @ <strong className="text-slate-900 dark:text-white">Studins School</strong></span>
+                <span>
+                  Co-Founder @{" "}
+                  <strong className="text-slate-900 dark:text-white">
+                    Studins School
+                  </strong>
+                </span>
               </div>
             </div>
 
@@ -102,26 +118,22 @@ export default function Hero() {
                 <span>Download CV</span>
               </a>
             </div>
-
           </div>
 
           {/* Right Column: Profile Frame & Floating Credentials */}
           <div className="lg:col-span-5 flex justify-center relative">
             <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-none">
-              
               {/* Outer decorative halo */}
               <div className="absolute -inset-2 bg-gradient-to-tr from-teal-500/20 via-emerald-500/10 to-transparent rounded-3xl blur-xl" />
 
               {/* Main Card Container */}
               <div className="relative rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 p-4 sm:p-6 shadow-xl shadow-slate-200/50 dark:shadow-none">
-                
                 {/* Visual Avatar / Portrait Representation */}
                 <div className="relative aspect-[4/4.5] sm:aspect-[4/4] rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-teal-950 flex flex-col justify-end p-6 border border-slate-200/40 dark:border-slate-700/60 shadow-inner group">
-                  
                   {/* Subtle graphical backdrop */}
                   <div className="absolute inset-0 bg-dot-pattern opacity-30" />
                   <div className="absolute -top-12 -right-12 w-48 h-48 bg-teal-500/20 rounded-full blur-2xl" />
-                  
+
                   {/* Avatar Center Graphic */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
                     <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white font-black text-3xl sm:text-4xl flex items-center justify-center shadow-xl shadow-teal-500/30 border-2 border-white/20 mb-4 transform transition-transform group-hover:scale-105">
@@ -144,7 +156,9 @@ export default function Hero() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <Award className="w-4 h-4 text-amber-400" />
-                        <span className="text-xs font-semibold text-white">5+ Years Proven Pedagogy</span>
+                        <span className="text-xs font-semibold text-white">
+                          5+ Years Proven Pedagogy
+                        </span>
                       </div>
                       <span className="text-[10px] font-bold uppercase tracking-wider text-teal-300 bg-teal-950/60 px-2 py-0.5 rounded border border-teal-500/30">
                         Verified
@@ -185,12 +199,9 @@ export default function Hero() {
                     </p>
                   </div>
                 </div>
-
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
